@@ -3,10 +3,10 @@ from .models import Student,School
 
 class StudentAdmin(admin.ModelAdmin):
     fieldsets = (
-        ('Student Field', {
+        ('Student Fields', {
             'fields': ('student_name', 'student_class', 'Student_roll_no')
         }),
-        ('Other Field', {            
+        ('Other Fields', {            
             'fields': ('student_registration_no','student_subject','student_school_name'),
         }),
     )

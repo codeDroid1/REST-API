@@ -8,10 +8,10 @@ class School(models.Model):
     
 
 class Student(models.Model):
-    student_registration_no = models.IntegerField(default=0)
     student_name = models.CharField(max_length=150)
-    student_class = models.CharField(max_length=20)
+    student_class = models.IntegerField()
     Student_roll_no = models.IntegerField()
+    student_registration_no = models.IntegerField(default=0)
     student_subject = models.TextField()
     student_school_name = models.ForeignKey(School, on_delete=models.CASCADE, default="")
     
