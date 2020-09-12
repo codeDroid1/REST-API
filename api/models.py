@@ -13,7 +13,7 @@ class Student(models.Model):
     Student_roll_no = models.IntegerField()
     student_registration_no = models.IntegerField(default=0)
     student_subject = models.TextField()
-    student_school_name = models.ForeignKey(School, on_delete=models.CASCADE, default="")
+    student_school_name = models.ForeignKey(School, on_delete=models.DO_NOTHING, default="")
     
 
     def __str__(self):
