@@ -14,7 +14,7 @@ class StudentAdmin(admin.ModelAdmin):
 class SchoolAdmin(admin.ModelAdmin):
      fieldsets = (
         ('List Of Schools', {
-            'fields': ['schools_list']
+            'fields': ('schools_list', 'category')
         }),
      )
 

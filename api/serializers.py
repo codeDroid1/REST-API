@@ -21,4 +21,4 @@ class StudentSerializer(serializers.HyperlinkedModelSerializer):
 class SchoolSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = School
-        fields = ['schools_list']
+        fields = ('schools_list', 'category')
